@@ -1,0 +1,276 @@
+html {
+  zoom: 160%;
+}
+
+body {
+  background-color: white;
+}
+
+a:link, a:visited
+.a {
+   border: 5px blue;
+   background-color: red;
+   height: 0.25em;
+   width: 0.25em;
+   max-width: 0.25em;
+   cursor: pointer;
+   animation-name: button1;
+   animation-duration: 300ms;
+   animation-iteration-count: infinite;
+   display: block;
+}
+
+@keyframes button1 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: green;}
+  75%  {background-color: red;}
+  100% {background-color: blue;}
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32em;
+}
+
+.asgsvg {
+  user-select: none;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  display: block;
+  margin: auto;
+  z-index: 1;
+  width: 24.5em;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.showme {
+  display: none;
+  position: absolute;
+}
+
+.showhim:hover .showme {
+  display: block;
+}
+
+.artisttextstyle1 {
+  background-color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 5em;
+  border: 0.2em solid rgb(255, 136, 0);
+  padding: 0.1em;
+  margin: 0.1em;
+  font-size: 3em;
+  z-index: 3;
+  color: rgb(255, 136, 0);
+}
+
+.artisttextstyle2 {
+  background-color: rgb(181, 255, 117);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 3.1em;
+  border: 0.2em solid rgb(0, 204, 255);
+  padding: 0.1em;
+  margin: 0.1em;
+  font-size: 3em;
+  color: rgb(0, 204, 255);
+  z-index: 4;
+}
+
+.artisttextstyle3 {
+  background-color: rgb(91, 66, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 4.6em;
+  border: 0.2em solid rgb(255, 143, 45);
+  padding: 0.1em;
+  margin: 0.1em;
+  font-size: 3em;
+  z-index: 3;
+  color: rgb(255, 143, 45);
+}
+
+.artisttextstyle4 {
+  background-color: rgb(255, 255, 255);
+  font-family: HelveticaNeue;
+  src: "HelveticaNeue.ttc";
+  width: 5.1em;
+  border: 0.2em solid rgb(0, 0, 0);
+  padding: 0.1em;
+  margin: 0.1em;
+  font-weight: 800;
+  font-size: 3em;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+}
+
+.artisttextstyle5 {
+  background-color: rgb(255, 141, 230);
+  font-family: HelveticaNeue;
+  src: "HelveticaNeue.ttc";
+  width: 3.7em;
+  border: 0.2em solid rgb(255, 255, 255);
+  padding: 0.1em;
+  margin: 0.1em;
+  font-size: 3em;
+  z-index: 3;
+  color: rgb(255, 255, 255);
+}
+
+.buttonplace1 {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0.01em, -7.2em);
+}
+
+.buttonplace2 {
+  position: absolute;
+  z-index: 2;
+  transform: translate(9.6em, -8.04em);
+}
+
+.buttonplace3 {
+  position: absolute;
+  z-index: 2;
+  transform: translate(17.51em, -1.26em);
+}
+
+.buttonplace4 {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  transform: translate(12.16em, 1.28em);
+}
+
+.buttonplace5 {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  transform: translate(10.44em, 12.83em);
+}
+
+@media screen and (max-width: 600px) {
+    html{
+      zoom: 85%;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50em;
+    }
+    .asgsvg{
+       width: 24em;
+       background-position: center;
+    }
+    .a{
+       width: 0.25em;
+       background-position: center;
+    }
+    .buttonplace1 {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      transform: translate(0em, -7.04em);
+    }
+
+    .buttonplace2 {
+      position: absolute;
+      z-index: 2;
+      transform: translate(9.401em, -7.851em);
+    }
+
+    .buttonplace3 {
+      position: absolute;
+      z-index: 2;
+      transform: translate(18.81em, -1.23em);
+    }
+
+    .buttonplace4 {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      transform: translate(12.71em, 0.69em);
+    }
+
+    .buttonplace5 {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      transform: translate(10.23em, 12.55em);
+    }
+    .artisttextstyle1 {
+      background-color: yellow;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 5em;
+      border: 0.2em solid rgb(255, 136, 0);
+      padding: 0.1em;
+      margin: 0.1em;
+      font-size: 2em;
+      z-index: 3;
+      color: rgb(255, 136, 0);
+    }
+
+    .artisttextstyle2 {
+      background-color: rgb(181, 255, 117);
+      font-family: Arial, Helvetica, sans-serif;
+      width: 3.1em;
+      border: 0.2em solid rgb(0, 204, 255);
+      padding: 0.1em;
+      margin: 0.1em;
+      font-size: 2em;
+      color: rgb(0, 204, 255);
+      z-index: 4;
+    }
+
+    .artisttextstyle3 {
+      background-color: rgb(91, 66, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      width: 4.6em;
+      border: 0.2em solid rgb(255, 143, 45);
+      padding: 0.1em;
+      margin: 0.1em;
+      font-size: 1.2em;
+      z-index: 3;
+      color: rgb(255, 143, 45);
+    }
+
+    .artisttextstyle4 {
+      background-color: rgb(255, 255, 255);
+      font-family: HelveticaNeue;
+      src: "HelveticaNeue.ttc";
+      width: 5.1em;
+      border: 0.2em solid rgb(0, 0, 0);
+      padding: 0.1em;
+      margin: 0.1em;
+      font-weight: 800;
+      font-size: 2em;
+      z-index: 3;
+      color: rgb(0, 0, 0);
+    }
+
+    .artisttextstyle5 {
+      background-color: rgb(255, 141, 230);
+      font-family: HelveticaNeue;
+      src: "HelveticaNeue.ttc";
+      width: 3.7em;
+      border: 0.2em solid rgb(255, 255, 255);
+      padding: 0.1em;
+      margin: 0.1em;
+      font-size: 3em;
+      z-index: 3;
+      color: rgb(255, 255, 255);
+    }
+}
